@@ -7,6 +7,8 @@ import Cart from "./components/Cart/Cart";
 import ModalCheckOut from "./components/Shop/ModalCheckOut";
 import NotFound from "./components/NotFound/NotFound";
 import RenderShop from "./components/Shop/RenderShop";
+import SignUp from "./components/Form/SignUp";
+import SignIn from "./components/Form/signin";
 
 function App() {
   const [selectedPhones, setSelectedPhones] = useState([]);
@@ -87,6 +89,8 @@ function App() {
         />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      {/* <SignUp />
+      <SignIn /> */}
     </div>
   );
 }

@@ -12,30 +12,34 @@ const RenderShop = ({ onClick }) => {
   };
   return (
     <div className="flex justify-around  mt-28 ">
-      <div className="side-bar w-1/5 border-r">
+      <div className=" w-1/5 fixed left-0  border-r">
         <ul className="text-lg mt-8 ">
-          <li className="mt-8   font-semibold ml-8 ">
+          <li className="mt-8 font-semibold ml-8 ">
             <NavLink
               className={({ isActive }) =>
                 isActive
-                  ? "bg-red-200 p-2 ml-4  text-red-600  rounded-xl inline "
+                  ? "bg-red-200 p-2 ml-4  text-red-600  rounded-xl inline  "
                   : undefined
               }
               to="all"
             >
-              All
+              <span className="hover:bg-red-100 hover:p-2  hover:text-red-500  hover:rounded-xl hover:inline">
+                All
+              </span>
             </NavLink>
           </li>
           <li className="mt-8   font-semibold ml-8">
             <NavLink
               className={({ isActive }) =>
                 isActive
-                  ? "bg-red-200 p-2 ml-4  text-red-600  rounded-xl inline "
+                  ? "bg-red-200 p-2 ml-4  text-red-600  rounded-xl inline"
                   : undefined
               }
               to="google"
             >
-              Google
+              <span className="hover:bg-red-100 hover:p-2  hover:text-red-500  hover:rounded-xl hover:inline">
+                Google
+              </span>
             </NavLink>
           </li>
           <li className="mt-8   font-semibold ml-8">
@@ -47,7 +51,9 @@ const RenderShop = ({ onClick }) => {
               }
               to="samsung"
             >
-              Samsung
+              <span className="hover:bg-red-100 hover:p-2  hover:text-red-500  hover:rounded-xl hover:inline">
+                Samsung
+              </span>
             </NavLink>
           </li>
           <li className="mt-8   font-semibold ml-8">
@@ -59,7 +65,9 @@ const RenderShop = ({ onClick }) => {
               }
               to="apple"
             >
-              Apple
+              <span className="hover:bg-red-100 hover:p-2  hover:text-red-500  hover:rounded-xl hover:inline">
+                Apple
+              </span>
             </NavLink>
           </li>
           <li className="mt-8   font-semibold ml-8">
@@ -71,7 +79,9 @@ const RenderShop = ({ onClick }) => {
               }
               to="xiaomi"
             >
-              Xiaomi
+              <span className="hover:bg-red-100 hover:p-2  hover:text-red-500  hover:rounded-xl hover:inline">
+                Xiaomi
+              </span>
             </NavLink>
           </li>
           <li className="mt-8   font-semibold ml-8">
@@ -83,7 +93,9 @@ const RenderShop = ({ onClick }) => {
               }
               to="poco"
             >
-              Poco
+              <span className="hover:bg-red-100 hover:p-2  hover:text-red-500  hover:rounded-xl hover:inline">
+                Poco
+              </span>
             </NavLink>
           </li>
           <li className="mt-8   font-semibold ml-8">
@@ -95,7 +107,9 @@ const RenderShop = ({ onClick }) => {
               }
               to="oppo"
             >
-              Oppo
+              <span className="hover:bg-red-100 hover:p-2  hover:text-red-500  hover:rounded-xl hover:inline">
+                Oppo
+              </span>
             </NavLink>
           </li>
           <li className="mt-8   font-semibold ml-8">
@@ -107,13 +121,15 @@ const RenderShop = ({ onClick }) => {
               }
               to="oneplus"
             >
-              OnePlus
+              <span className="hover:bg-red-100 hover:p-2  hover:text-red-500  hover:rounded-xl hover:inline">
+                OnePlus
+              </span>
             </NavLink>
           </li>
         </ul>
       </div>
 
-      <div className="products flex justify-around items-center flex-wrap w-4/5 text-center">
+      <div className="products flex justify-start  ml-56  items-center  flex-wrap w-4/5 text-center">
         {getProductsParam().map((phone, index) => (
           <InsertProducts onClick={onClick} phone={phone} key={index} />
         ))}

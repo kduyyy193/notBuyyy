@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Pixel6 from "../../assets/img/pixel6.jpg";
 import Pixel6Pro from "../../assets/img/pixel6pro.jpg";
 import Pixel5a from "../../assets/img/pixel5a.jpg";
@@ -165,7 +165,7 @@ export const phonesList = [
 const InsertProducts = ({ phone, onClick }) => {
   return (
     <div
-      className="product flex flex-col items-center rounded-md ml-4 p-4 mb-4 border"
+      className="product flex flex-col items-center rounded-md ml-4 p-4 mb-4 border hover:bg-slate-100"
       key={phone.name}
     >
       <div>

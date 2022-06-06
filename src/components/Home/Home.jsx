@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import imgContent from "../../assets/img/content.png";
 const Home = () => {
   return (
@@ -13,11 +13,16 @@ const Home = () => {
           You can put your trust in us for take care of your need for a good
           smartphone.
         </p>
-        <Link to="/shop">
+        <NavLink
+          to="/shop/all"
+          className={({ isActive }) =>
+            isActive ? " bg-red-300 p-2 pt-4 rounded-xl " : undefined
+          }
+        >
           <div className="p-3 bg-yellow-500 text-xl rounded-xl inline font-blod hover:opacity-80 cursor-pointer">
             View our products
           </div>
-        </Link>
+        </NavLink>
       </div>
       <div className="w-2/5 ml-8">
         <img className=" max-w-xs flex-grow " src={imgContent}></img>
