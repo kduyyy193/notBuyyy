@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./index.css";
-import NavBar from "./components/Navigation/NavBar";
-import Home from "./components//Home/Home";
-import Cart from "./components/Cart/Cart";
-import ModalCheckOut from "./components/Shop/ModalCheckOut";
-import NotFound from "./components/NotFound/NotFound";
-import RenderShop from "./components/Shop/RenderShop";
-import SignUp from "./components/Form/SignUp";
-import SignIn from "./components/Form/signin";
+import NavBar from "./components/Layouts/DefaultLayout/Navigation/NavBar";
+import Home from "./pages/Home/Home";
+import Cart from "./pages/Cart/Cart";
+import ModalCheckOut from "./pages/Checkout/ModalCheckOut";
+import NotFound from "./pages/NotFound/NotFound";
+import RenderShop from "./pages/Shop/RenderShop";
+import SignIn from "./pages/Auth/SignIn";
+import Regiser from "./pages/Auth/Regiser";
 
 function App() {
   const [selectedPhones, setSelectedPhones] = useState([]);
@@ -64,8 +64,9 @@ function App() {
     );
     setSelectedPhones(newPhones, ...selectedPhones);
   };
+
   return (
-    <div className="App">
+    <div className="App  h-screen">
       <NavBar counter={selectedPhones.length} />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -89,8 +90,6 @@ function App() {
         />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      {/* <SignUp />
-      <SignIn /> */}
     </div>
   );
 }

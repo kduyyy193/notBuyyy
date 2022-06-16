@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #fff;
 }
 
 .App-logo {
@@ -39,4 +40,62 @@
 
 button {
   font-size: calc(10px + 2vmin);
+}
+
+svg {
+  color: whitesmoke;
+  margin-top: 8px;
+  z-index: 10;
+}
+.css-sghohy-MuiButtonBase-root-MuiButton-root {
+  background-color: #61dafb !important;
+  border-radius: 12px !important;
+}
+
+/* new  */
+.css-1nrlq1o-MuiFormControl-root {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  border: 1px solid #61dafb !important;
+  border-radius: 12px !important;
+  padding: 2px 0 !important;
+  margin-top: 10px !important;
+}
+
+.css-1nrlq1o-MuiFormControl-root div {
+  border: none !important;
+  margin-top: 2px !important;
+  width: 100%;
+}
+
+.css-1nrlq1o-MuiFormControl-root svg {
+  padding-left: 16px !important;
+  width: 60px;
+}
+
+.css-1le28he-MuiInputBase-root {
+  padding: 1px !important;
+}
+.css-yz9k0d-MuiInputBase-input {
+  padding-top: 10px !important;
+  padding-bottom: 5px !important;
+}
+
+.css-yz9k0d-MuiInputBase-input:focus {
+  outline-width: 2px !important;
+  outline-style: solid !important;
+  outline-color: #2eaed1 !important;
+  padding-top: 13px !important;
+  padding-bottom: 7px !important;
+  padding-left: 57px !important;
+  margin-left: -56px;
+  border-radius: 10px;
+  margin-top: -3px;
+  margin-bottom: -3px;
+}
+
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+  height: 40px;
+  background: #000;
 }

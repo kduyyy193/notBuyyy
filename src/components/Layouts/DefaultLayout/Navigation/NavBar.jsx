@@ -38,12 +38,18 @@ const NavBar = ({ counter }) => {
             }
           >
             <div className="hover:opacity-80 inline text-gray-600 text-2xl relative">
-              <FontAwesomeIcon icon={faShoppingCart} />
+              <FontAwesomeIcon
+                icon={faShoppingCart}
+                className="text-gray-600"
+              />
               <div className="bg-yellow-300  rounded-full w-6 h-6  absolute bottom-4 text-base font-semibold text-center left-4">
                 <span>{counter}</span>
               </div>
             </div>
           </NavLink>
+        </li>
+        <li className="ml-16 text-xl p-2 font-semibold text-gray-600 hover:text-red-600 cursor-pointer">
+          <NavLink to="/login">Login</NavLink>
         </li>
       </ul>
     </div>
