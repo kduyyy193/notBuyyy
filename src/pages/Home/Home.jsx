@@ -5,9 +5,8 @@ import NavBar from "../../components/Layouts/DefaultLayout/Navigation/NavBar";
 const Home = () => {
   return (
     <>
-      {/* <NavBar counter={selectedPhones.length} /> */}
-      <div className="flex items-center justify-evenly ml-32 mr-32 mt-28 p-4">
-        <div className="w-6/12">
+      <div className="flex flex-wrap min-w-full items-center justify-evenly ml-32 mr-32 mt-28 m-4">
+        <div className="max-w-lg">
           <h1 className="font-black text-4xl text-gray-700 tracking-widest max-w-md">
             Tap into your imagination
           </h1>
@@ -27,7 +26,7 @@ const Home = () => {
             </div>
           </NavLink>
         </div>
-        <div className="w-2/5 ml-8">
+        <div className=" ml-8">
           <img className=" max-w-xs flex-grow " src={imgContent}></img>
         </div>
       </div>

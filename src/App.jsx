@@ -66,7 +66,7 @@ function App() {
   };
 
   return (
-    <div className="App  h-screen">
+    <div className="App w-screen h-screen">
       <NavBar counter={selectedPhones.length} />
       <Routes>
         <Route path="/" element={<Home />} />
